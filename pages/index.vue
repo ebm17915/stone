@@ -1,39 +1,30 @@
 <template>
   <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        stone
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
+    <h1>Demo Site for Stone</h1>
+    <p class="subheading">This is the Demo Site for Stone.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A amet maxime esse, recusandae libero veniam dolorum doloremque deserunt nihil magni adipisci assumenda quaerat mollitia, ipsam minima, possimus architecto? Ut, porro.</p>
   </section>
-</template>
+</template> 
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
 
 export default {
-  components: {
-    AppLogo
-  }
+    head() {
+        return {
+            title: 'Stone Home',
+            meta: [
+                {name: 'description', content: 'This is about section.'},
+                {name: 'keywords', content: 'about info'},
+            ]
+        }
+    }
+
 }
 </script>
 
 <style>
-.container {
+/*.container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -42,7 +33,7 @@ export default {
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; '/* 1 *'/
   display: block;
   font-weight: 300;
   font-size: 100px;
@@ -60,6 +51,8 @@ export default {
 
 .links {
   padding-top: 15px;
-}
-</style>
+} 
+*/
+</style> 
+
 
